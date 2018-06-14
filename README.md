@@ -1,0 +1,35 @@
+## Presentation plan
+Show Kotlin language features by morphing familiar Java syntax progressively towards idiomatic Kotlin syntax.
+
+- **Part 0: Bootstrapping** (30 seconds)
+    - Step by step introduction
+    - Hello world
+- **Part 1: Type basics** (2 minutes)
+    - Constructor syntax and fields
+    - Data class and equality
+    - Named parameters
+    - Nullable types `// keep it nullable for now`
+- **Part 2: Functions** (3 minutes)
+    - `// override the toString function`
+    - String templates
+    - One-line functions
+    - when syntax `// handle nullable`
+    - Extension functions `// extension receiver`
+    - Infix functions
+- **Part 3: Lambda expressions** (8 minutes)
+    - `// create the team function and class`
+    - Nullable type safety `// addRelationship members, handle nullable property`
+    - Default constructor parameters
+    - Function-like invocation
+    - Function signatures as first class objects
+    - Replace lambda parameter with `it`
+    - `// create the toString function and class`
+    - Use `it` in the map function
+- **Part 4: DSL** (4 minutes)
+    - Replace lambda declaration with an extension `// then remove this`
+    - Move brackets before lambda expression 
+    - Move extension function as a member of Team and redefine it `// dispatch receiver`
+- **Part 5: Idioms** (extra)
+    - Nullable syntax `// demonstrate with o.get?.get?.get?.let { it } :? throw X`
+    - by lazy
+    - let it run this, also it apply this
