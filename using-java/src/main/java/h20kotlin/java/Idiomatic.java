@@ -12,25 +12,26 @@ public class Idiomatic {
         while (iterator.hasNext()) {
             Integer number = iterator.next();
             if (number % 3 == 0) {
-                System.out.println(number);
+                System.out.println(number / 3);
             }
         }
 
         for (Iterator<Integer> iter = numbers.iterator(); iter.hasNext(); ) {
             Integer number = iter.next();
             if (number % 3 == 0) {
-                System.out.println(number);
+                System.out.println(number / 3);
             }
         }
 
         for (Integer number : numbers) {
             if (number % 3 == 0) {
-                System.out.println(number);
+                System.out.println(number / 3);
             }
         }
 
         numbers.stream()
                 .filter(number -> number % 3 == 0)
+                .map(number -> number / 3)
                 .forEach(System.out::println);
     }
 }
