@@ -1,10 +1,20 @@
 package h20kotlin.java;
 
+import h20kotlin.java.person.KTown;
+
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 public class Idiomatic {
+    public String getTownLevel(KTown town) {
+        if (town == null || town.getTownLevel() == null || town.getTownLevel().getLevel() == null) {
+            throw new IllegalArgumentException();
+        }
+
+        return "Level " + town.getTownLevel().getLevel();
+    }
+
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(7, 0, 60, 3, 6, 4, 30, 190);
 
